@@ -8,7 +8,7 @@ const projects = [
     description: "AI-платформа для автоматизации маркетинга и продаж. 5 модулей в одном решении.",
     icon: "🚀",
     color: "from-indigo-600 to-purple-600",
-    price: "199 BYN/мес",
+    price: '399 BYN/мес', 
     category: "saas",
     features: ["Исследование рынка", "Генерация контента", "Поиск лидов", "Воронки продаж", "AI-ассистент"],
     tech: ["React", "Node.js", "AI API"],
@@ -20,7 +20,7 @@ const projects = [
     description: "Чат-бот для психологической поддержки клиентов. Работает 24/7, отвечает мгновенно.",
     icon: "🧠",
     color: "from-emerald-500 to-teal-500",
-    price: "89 BYN/мес",
+    price: '149 BYN/мес', 
     category: "bot",
     features: ["Консультации 24/7", "Анонимность", "Сбора анамнеза", "Запись на сессии", "Админ-панель"],
     tech: ["Node.js", "Telegram API", "MongoDB"],
@@ -32,7 +32,7 @@ const projects = [
     description: "Автоматизация управления заказами, клиентами и платежами. Всё в одном боте.",
     icon: "⚙️",
     color: "from-orange-500 to-red-500",
-    price: "149 BYN/мес",
+    price: '249 BYN/мес', 
     category: "bot",
     features: ["Приём заказов", "Обработка платежей", "CRM-система", "Уведомления", "Статистика"],
     tech: ["Node.js", "Telegram API", "PostgreSQL"],
@@ -44,7 +44,7 @@ const projects = [
     description: "AI генерирует продающие тексты, посты, статьи. Подключен к Telegram-каналу.",
     icon: "✍️",
     color: "from-pink-500 to-rose-500",
-    price: "59 BYN/мес",
+    price: '99 BYN/мес', 
     category: "bot",
     features: ["Продающие тексты", "Посты для соцсетей", "SEO-статьи", "Email-рассылки", "Интеграция с каналом"],
     tech: ["OpenAI API", "Telegram API", "Node.js"],
@@ -56,11 +56,11 @@ const projects = [
     description: "Посадочная страница + Telegram-бот + админ-панель. Полноценная воронка продаж.",
     icon: "🌐",
     color: "from-blue-600 to-cyan-600",
-    price: "от 350 BYN",
+    price: "от 700 BYN",
     category: "site",
     features: ["Лендинг под ключ", "Telegram-бот", "CRM для заказов", "Интеграция платежей", "SEO-настройка"],
     tech: ["React", "Vite", "Tailwind CSS", "Node.js"],
-    result: "Готовая система продаж за 3 дня"
+    result: "Готовая система продаж за 5-7 дней" 
   },
   {
     id: 6,
@@ -69,10 +69,10 @@ const projects = [
     icon: "⭐",
     color: "from-yellow-500 to-amber-500",
     price: "от 25 BYN",
-    category: "saas",
+    category: "copywriting",
     features: ["Отзывы для маркетплейсов", "Переводы RU/EN/BY", "Продающие описания", "Рерайт текстов", "SEO-копирайтинг"],
     tech: ["Копирайтинг", "Перевод", "Рерайтинг"],
-    result: "Качественные текста за 24 часа"
+    result: "Качественные тексты за 24 часа"
   }
 ];
 

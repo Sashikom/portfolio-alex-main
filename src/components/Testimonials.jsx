@@ -1,66 +1,21 @@
 import { motion } from 'framer-motion';
 
 export default function Testimonials() {
-  const testimonials = [
+  const projects = [
     {
       id: 1,
-      name: 'Мария Иванова',
-      role: 'Владелец салона красоты',
-      date: '25 января 2026',
-      text: 'Спасибо за быстрый запуск! Портфолио для моего салона красоты (30+ работ) сделал за 4 дня. Клиенты теперь сами оставляют заявки через бота — за неделю пришло 12 новых клиентов!',
-      avatar: 'https://api.dicebear.com/7.x/thumbs/svg?seed=Maria',
-      project: 'Портфолио + Telegram-бот для записи',
-      stats: '12 новых клиентов за неделю'
-    },
-    {
-      id: 2,
-      name: 'Елена Васильева',
-      role: 'Дизайнер',
-      date: '5 января 2026',
-      text: 'Заказывала кастомные кнопки и формы для своего сайта. Александр не только сделал всё быстро, но и добавил анимацию при клике. После запуска конверсия выросла на 25%!',
-      avatar: 'https://api.dicebear.com/7.x/thumbs/svg?seed=Elena',
-      project: 'UI-компоненты для сайта',
-      stats: 'Конверсия выросла на 25%'
-    },
-    {
-      id: 3,
-      name: 'Ольга Николаева',
-      role: 'Владелец студии дизайна',
-      date: '22 января 2026',
-      text: 'Заказала сайт-визитку для студии. Александр сделал красивый дизайн, добавил форму записи и интеграцию с ботом. Теперь клиенты сами записываются — за неделю 18 новых клиентов!',
-      avatar: 'https://api.dicebear.com/7.x/thumbs/svg?seed=Olga',
-      project: 'Сайт для студии дизайна',
-      stats: '18 новых клиентов за неделю'
-    },
-    {
-      id: 4,
-      name: 'Дмитрий Смирнов',
-      role: 'Стартапер в сфере edtech',
-      date: '18 января 2026',
-      text: 'Заказал лендинг для стартапа «LearnPro» за 5 дней. Александр не только сделал красивый сайт, но и интегрировал форму оплаты. Первая неделя — 85 оплаченных подписок!',
-      avatar: 'https://api.dicebear.com/7.x/thumbs/svg?seed=Dmitry',
-      project: 'Лендинг + платежная система',
-      stats: '85 оплаченных подписок за неделю'
-    },
-    {
-      id: 5,
-      name: 'Алексей Козлов',
-      role: 'Предприниматель в сфере питания',
-      date: '20 января 2026',
-      text: 'Нужен был бот для автоматизации заказов в моём кафе. Александр создал отличного бота с квизом и формой заказа. Теперь клиенты сами оформляют заказы — за неделю 45 новых заказов!',
-      avatar: 'https://api.dicebear.com/7.x/thumbs/svg?seed=Alexey',
-      project: 'Telegram-бот для кафе',
-      stats: '45 новых заказов за неделю'
-    },
-    {
-      id: 6,
-      name: 'Сергей Петров',
-      role: 'Фронтенд-разработчик',
-      date: '12 января 2026',
-      text: 'Помог с рефакторингом проекта на React. Александр нашел утечки памяти и ускорил загрузку на 40%. Теперь проект работает стабильно даже при 500+ одновременных пользователей.',
-      avatar: 'https://api.dicebear.com/7.x/thumbs/svg?seed=Sergey',
-      project: 'Оптимизация React-приложения',
-      stats: 'Ускорение загрузки на 40%'
+      name: 'AI Business OS',
+      role: 'SaaS-платформа для бизнеса',
+      date: 'Запущен в июле 2026',
+      text: 'Полноценная AI-платформа для автоматизации маркетинга и продаж. 5 модулей в одном решении: AI Чат, Генерация контента, Исследование рынка, Воронки продаж, Профиль пользователя.',
+      avatar: 'https://api.dicebear.com/7.x/thumbs/svg?seed=AI',
+      project: 'Telegram-бот + Backend + PostgreSQL + Redis',
+      stats: 'Работает 24/7, 5 AI-модулей',
+      links: {
+        bot: 'https://t.me/Sashikom_bot',
+        landing: 'https://ai-business-os-landing-58af-delta.vercel.app/',
+        github: 'https://github.com/Sashikom/ai-business-os'
+      }
     }
   ];
 
@@ -77,20 +32,20 @@ export default function Testimonials() {
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             <span className="bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
-              Отзывы клиентов
+              Мои проекты
             </span>
           </h2>
           <p className="text-gray-600 dark:text-gray-400 text-lg max-w-2xl mx-auto">
-            Реальные отзывы от довольных клиентов
+            Реальные работающие продукты, которые вы можете попробовать прямо сейчас
           </p>
           <div className="w-24 h-1 bg-gradient-to-r from-indigo-600 to-purple-600 mx-auto rounded-full mt-4"></div>
         </motion.div>
 
-        {/* Сетка отзывов */}
+        {/* Сетка проектов */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          {testimonials.map((testimonial, index) => (
+          {projects.map((project, index) => (
             <motion.div
-              key={testimonial.id}
+              key={project.id}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -103,45 +58,104 @@ export default function Testimonials() {
                 {[...Array(5)].map((_, i) => (
                   <span key={i} className="text-yellow-400 text-lg">⭐</span>
                 ))}
+                <span className="ml-2 text-xs bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300 px-2 py-1 rounded-full">
+                  🟢 Работает
+                </span>
               </div>
 
-              {/* Текст отзыва */}
+              {/* Текст проекта */}
               <p className="text-gray-700 dark:text-gray-300 mb-6 italic text-base leading-relaxed">
-                "{testimonial.text}"
+                "{project.text}"
               </p>
 
               {/* Автор с фото */}
               <div className="flex items-center gap-4 pt-6 border-t border-gray-200 dark:border-gray-700">
                 <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-indigo-600 dark:border-indigo-400">
                   <img 
-                    src={testimonial.avatar} 
-                    alt={testimonial.name}
+                    src={project.avatar} 
+                    alt={project.name}
                     className="w-full h-full object-cover"
                   />
                 </div>
                 
                 <div className="flex-1">
                   <h4 className="font-bold text-lg text-gray-900 dark:text-white">
-                    {testimonial.name}
+                    {project.name}
                   </h4>
                   <p className="text-sm text-gray-500 dark:text-gray-400">
-                    {testimonial.role} • {testimonial.date}
+                    {project.role} • {project.date}
                   </p>
                   <p className="text-sm text-indigo-600 dark:text-indigo-400 font-medium mt-1">
-                    {testimonial.project}
+                    {project.project}
                   </p>
                   <div className="text-xs text-gray-500 dark:text-gray-400 mt-1">
                     <span className="text-indigo-600 dark:text-indigo-400 font-medium">
-                      {testimonial.stats}
+                      {project.stats}
                     </span>
                   </div>
                 </div>
+              </div>
+
+              {/* Ссылки на проект */}
+              <div className="mt-6 pt-6 border-t border-gray-200 dark:border-gray-700 flex flex-col gap-2">
+                <a 
+                  href={project.links.bot} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-sm text-indigo-600 dark:text-indigo-400 hover:text-indigo-800 dark:hover:text-indigo-300 transition-colors"
+                >
+                  🤖 Telegram-бот →
+                </a>
+                <a 
+                  href={project.links.landing} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-sm text-indigo-600 dark:text-indigo-400 hover:text-indigo-800 dark:hover:text-indigo-300 transition-colors"
+                >
+                  🌐 Лендинг →
+                </a>
+                <a 
+                  href={project.links.github} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-sm text-indigo-600 dark:text-indigo-400 hover:text-indigo-800 dark:hover:text-indigo-300 transition-colors"
+                >
+                  💻 GitHub →
+                </a>
               </div>
             </motion.div>
           ))}
         </div>
 
-        {/* Статистика */}
+        {/* Блок для будущих отзывов */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.3 }}
+          className="mt-12 text-center max-w-3xl mx-auto"
+        >
+          <div className="bg-white/60 dark:bg-gray-800/60 backdrop-blur-sm rounded-2xl px-8 py-10 border border-indigo-200 dark:border-indigo-800">
+            <div className="text-5xl mb-4">💬</div>
+            <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">
+              Станьте моим первым клиентом!
+            </h3>
+            <p className="text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
+              Готов предоставить <span className="text-indigo-600 dark:text-indigo-400 font-semibold">бесплатный демо-доступ</span> к любому продукту. 
+              Убедитесь в качестве лично — и оставьте честный отзыв, который появится здесь.
+            </p>
+            <a 
+              href="https://t.me/maksahbot" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-6 py-3 rounded-full font-semibold hover:shadow-lg transition-all"
+            >
+              💬 Написать в Telegram
+            </a>
+          </div>
+        </motion.div>
+
+        {/* Честная статистика */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -152,10 +166,10 @@ export default function Testimonials() {
           <div className="inline-flex flex-wrap justify-center items-center gap-6 md:gap-12 bg-white/60 dark:bg-gray-800/60 backdrop-blur-sm rounded-2xl px-6 md:px-10 py-6">
             <div className="text-center">
               <div className="text-3xl md:text-4xl font-bold text-indigo-600 dark:text-indigo-400">
-                50+
+                1+
               </div>
               <div className="text-sm text-gray-600 dark:text-gray-400">
-                Проектов
+                Запущенный проект
               </div>
             </div>
             
@@ -163,10 +177,10 @@ export default function Testimonials() {
             
             <div className="text-center">
               <div className="text-3xl md:text-4xl font-bold text-indigo-600 dark:text-indigo-400">
-                30+
+                24/7
               </div>
               <div className="text-sm text-gray-600 dark:text-gray-400">
-                Довольных клиентов
+                Работа без сбоев
               </div>
             </div>
             
@@ -177,7 +191,7 @@ export default function Testimonials() {
                 100%
               </div>
               <div className="text-sm text-gray-600 dark:text-gray-400">
-                Рекомендаций
+                Вовлечённость
               </div>
             </div>
           </div>
