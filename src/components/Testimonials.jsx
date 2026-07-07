@@ -12,10 +12,10 @@ export default function Testimonials() {
       project: 'Telegram-бот + Backend + PostgreSQL + Redis',
       stats: 'Работает 24/7, 5 AI-модулей',
       links: {
-        bot: 'https://t.me/Sashikom_bot',
-        landing: 'https://ai-business-os-landing-58af-delta.vercel.app/',
-        github: 'https://github.com/Sashikom/ai-business-os'
-      }
+  bot: 'https://github.com/Sashikom/content-factory-pro/tree/main/telegram_bot',
+  landing: 'https://github.com/Sashikom/content-factory-pro',
+  github: 'https://github.com/Sashikom/content-factory-pro'
+}
     },
     {
       id: 2,
