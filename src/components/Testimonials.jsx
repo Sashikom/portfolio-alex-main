@@ -12,7 +12,7 @@ export default function Testimonials() {
       project: 'Telegram-бот + Backend + PostgreSQL + Redis',
       stats: 'Работает 24/7, 5 AI-модулей',
       links: {
-  bot: 'https://github.com/Sashikom/content-factory-pro/tree/main/telegram_bot',
+  bot: 'https://t.me/SASHIKIVIBOT',
   landing: 'https://github.com/Sashikom/content-factory-pro',
   github: 'https://github.com/Sashikom/content-factory-pro'
 }
