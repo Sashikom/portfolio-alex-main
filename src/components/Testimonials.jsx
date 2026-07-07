@@ -16,6 +16,21 @@ export default function Testimonials() {
         landing: 'https://ai-business-os-landing-58af-delta.vercel.app/',
         github: 'https://github.com/Sashikom/ai-business-os'
       }
+    },
+    {
+      id: 2,
+      name: 'Content Factory PRO',
+      role: 'SaaS для автогенерации видео',
+      date: 'Запущен в июле 2026',
+      text: 'Автоматизированная система генерации видео (Reels/TikTok) с использованием AI. Создаёт сценарий, озвучку, подбирает фон и собирает готовое видео за 60 секунд.',
+      avatar: 'https://api.dicebear.com/7.x/thumbs/svg?seed=ContentFactory',
+      project: 'FastAPI + FFmpeg + MinIO + Redis + Celery',
+      stats: 'Полный цикл: от идеи до готового видео',
+      links: {
+        bot: 'https://github.com/Sashikom/content-factory-pro',
+        landing: 'https://github.com/Sashikom/content-factory-pro',
+        github: 'https://github.com/Sashikom/content-factory-pro'
+      }
     }
   ];
 
@@ -166,10 +181,10 @@ export default function Testimonials() {
           <div className="inline-flex flex-wrap justify-center items-center gap-6 md:gap-12 bg-white/60 dark:bg-gray-800/60 backdrop-blur-sm rounded-2xl px-6 md:px-10 py-6">
             <div className="text-center">
               <div className="text-3xl md:text-4xl font-bold text-indigo-600 dark:text-indigo-400">
-                1+
+                2+
               </div>
               <div className="text-sm text-gray-600 dark:text-gray-400">
-                Запущенный проект
+                Запущенных проектов
               </div>
             </div>
             
