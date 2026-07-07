@@ -27,10 +27,10 @@ export default function Testimonials() {
       project: 'FastAPI + FFmpeg + MinIO + Redis + Celery',
       stats: 'Полный цикл: от идеи до готового видео',
       links: {
-        bot: 'https://github.com/Sashikom/content-factory-pro',
-        landing: 'https://github.com/Sashikom/content-factory-pro',
-        github: 'https://github.com/Sashikom/content-factory-pro'
-      }
+  bot: 'https://t.me/SASHIKIVIBOT',
+  landing: 'https://github.com/Sashikom/content-factory-pro',
+  github: 'https://github.com/Sashikom/content-factory-pro'
+}
     }
   ];
 
